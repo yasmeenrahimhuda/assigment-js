@@ -1,4 +1,4 @@
-// q1. Write a program to take a number in a variable, do the
+// Q1. Write a program to take a number in a variable, do the
 // required arithmetic to display the following result in your
 // browser:
 var num=10;
@@ -39,7 +39,7 @@ document.write("result is: "+ result +"<br>");
 var greet=prompt("Enter your name");
 alert("Hello");
 
-// q5. Write a program to take input a number from user &
+// Q4. Write a program to take input a number from user &
 // display it’s multiplication table on your browser. If user
 // does not enter a new number, multiplication table of 5
 // should be displayed by default.
@@ -54,8 +54,8 @@ var table8 = 5*8;
 var table9 = 5*9;
 var table10 = 5*10;
 
-var num1=prompt("Enter the number");
-var num2=prompt("","Table of 5");
+var num1=+prompt("Enter the number");
+var num2=+prompt("","Table of 5");
 document.write("<h1>Answer Number 5 </h1>"+"<br>");
 document.write("Table of 5"+"<br>");
 document.write("5x1= " + table + "<br>");
@@ -70,7 +70,7 @@ document.write("5x9= " + table9 + "<br>");
 document.write("5x10= " + table10 + "<br>");
 
 
-// Q6. Take
+// Q5. Take
 // a) Take three subjects name from user and store them in 3
 // different variables.
 // b) Total marks for each subject is 100, store it in another
