@@ -81,6 +81,27 @@ document.write("5x10= " + table10 + "<br>");
 // and store them in variables.
 // e) Now calculate total marks and percentage and show the
 // result in browser like this.(Hint: user table)
+var studentName=prompt("Enter Your name");
+var subject1= +prompt("English Marks");
+var subject2= +prompt("Urdu Marks");
+var subject3= +prompt("Maths Marks");
+
+var total=300;
+var obtainedMarks = subject1 + subject2 + subject3 ;
+var percentage=(obtainedMarks/total)*100
+alert(percentage)
+if(percentage >=80 && percentage <101){
+    alert("you got A+")
+}
+else if(percentage >=70 && percentage <80){
+    alert("you got A")
+}
+else if(percentage>=60 && percentage <70){
+    alert("you got B")
+}
+else{
+    alert("Work Hard")
+}
 
 
 
