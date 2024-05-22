@@ -186,6 +186,11 @@ document.write("Total Currency in PKR: "+result+ "<br>");
 // b. Multiply by 10
 // c. Divide the result by 2
 // Perform all calculations in a single expression
+var number = 7; 
+
+var result = ((number + 5) * 10) / 2;
+
+console.log("The result is:", result);
 
 // Q11. The Age Calculator: Forgot how old someone is?
 // Calculate it!
