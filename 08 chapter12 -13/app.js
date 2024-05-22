@@ -2,9 +2,31 @@
 // in a variable & checks whether the given input is a
 // number, uppercase letter or lower case letter. (Hint: ASCII
 // // codes:- A=65, Z=90, a=97, z=122).
+var ch=prompt("Enter the letter")
+if (ch >="A" && ch <= "Z"){
+    alert(ch +"is an UpperCase character");
+}else if (ch >= "a" && ch <= "z"){
+alert(ch +" is an LowerCase character ");
+}else alert(ch +" is not an alphabetic character ");
 
 // 2. Write a JavaScript program that accept two integers and
 // display the larger. Also show if the two integers are equal.
+function integer(a,b) {
+
+    if (a > 0 && b > 0 && a > b) {
+      document.write("The larger number is " + a );
+    } else if (a > 0 && b > 0 && a < b) {
+      document.write("The larger number is " + b);
+    } else if (a === b && a > 0 && b > 0) {
+      document.write("Both numbers are equal!")
+    } else {
+        document.write("Please add an integer!");
+  
+    }
+  }
+  
+  integer(-1,-1);
+
 
 // Q3 Write a program that takes input a number from user &
 // state whether the number is positive, negative or zero.
