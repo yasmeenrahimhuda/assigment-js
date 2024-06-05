@@ -68,15 +68,11 @@ var totalScore=500
 // position/index. . Display the updated array in your
 // browser.
 
-
-
-
-
-
 // 10. Write a program to store student scores in an array &
 // sort the array in ascending order using Array’s sort
 // method.
-
+var numbers=[10,20,30,40]
+console.log(numbers.sort());
 
 // 11. Write a program to initialize an array with city names.
 // Copy 3 array elements from cities array to selectedCities
@@ -91,11 +87,9 @@ var city2 = "peshawar";
 // 12. Write a program to create a single string from the
 // below mentioned array:
 // var arr = [“This ”, “ is ”, “ my ”, “ cat”];
-
-
-
-
-
+var arr=["This" , "is ","my","cat"](
+        document.write(arr.join(""))
+)
 
 // 13. Create a new array. Store values one by one in such a way
 // that you can access the values in the order in which they
@@ -115,4 +109,12 @@ var city2 = "peshawar";
 //   Display the following dropdown/select menu in your
 //   browser using document.write() method:
  // Declare and initialize the array with phone manufacturers
+ 
+var phone=["apple","samsung","motorola","nokia","sony","haier"]
+var firstPhone=0
+document.write(
+    "<select>"
+)
+document.write("opion>"+phone[0]+"</option");
+document.write("</select>");
  
