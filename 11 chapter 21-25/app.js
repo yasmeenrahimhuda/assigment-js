@@ -2,8 +2,8 @@
 // last name using prompt and merge them in a new variable
 // titled fullName. Greet the user using his full name.
 
-var firstName =prompt("enter your first name");
-var lastName=prompt("enter your last name");
+var firstName =prompt("Enter your first name");
+var lastName=prompt("Enter your last name");
 var fullName = firstName + " " + lastName;
 alert("Hello, " + fullName + " Welcome");
 
@@ -28,18 +28,18 @@ alert("Hello, " + fullName + " Welcome");
 
 var find="Pakistani";
 var index=find.indexOf("n");
-document.write(index); 
+document.write(index+"<br>"); 
 // 4. Write a program to find the last index of letter “l” in the
 // word “Hello World” and display the result in your browser.
 var letter="Hello World";
 var indexing=letter.lastIndexOf("l");
-document.write(indexing); 
+document.write(indexing+"<br>"); 
 
 // 5. Write a program to find the character at 3rd index in the
 // word “Pakistani” and display the result in your browser.
 var word="Pakistani";
 var character=word.charAt("3");
-document.write(character); 
+document.write(character+"<br>"); 
 
 // 6. Repeat Q1 using string concat() method.
 
@@ -52,26 +52,26 @@ document.write(character);
 
 var text="Hyderabad";
 var replaceText=text.replace("Hyderabad","Islamabad");
-document.write(replaceText);
+document.write(replaceText +"<br>");
 
 // 8. Write a program to replace all occurrences of “and” in the
 // string with “&” and display the result in your browser.
 var message="Ali and Sami are best friends. They play cricket and football together.";
 var replaceAll=message.replaceAll("and","&")
-document.write(replaceAll);
+document.write(replaceAll+"<br>");
 
 // 9. Write a program that converts a string “472” to a number
 // 472. Display the values & types in your browser.
 var num="472";
 var convert=num.toString((472))
-document.write(convert);
+document.write(convert +"<br>");
 
 // 10. Write a program that takes user input. Convert and
 // show the input in capital letters.
 
-var userInput =prompt("Enter Some Text");
+var userInput =prompt("Enter Some Text and covert into capital letter");
 var capitalLetter = userInput.toUpperCase();
-document.write("Input in uppercase:", capitalLetter);
+document.write("Input in uppercase:", capitalLetter+"<br>");
 
 
 // 11. Write a program that takes user input. Convert and
@@ -88,12 +88,12 @@ var words = sentence.toLowerCase().split(' ');
     }
     
 // Prompt the user to enter some text
- var input = prompt("Enter some text:");
+ var input = prompt("Enter some text and change into title case");
 
 // Convert the input to title case
 var titleCaseInput = toTitleCase(input);
 
-document.write("Input in titlecase:", titleCaseInput);
+document.write("Input in titlecase:", titleCaseInput +"<br>");
 
 // 12. Write a program that converts the variable num to
 // string.
@@ -101,17 +101,22 @@ document.write("Input in titlecase:", titleCaseInput);
 
 var number=35.36;
 var removeDot = number.toString().replace(".","");
-document.write("Number as string without dot", removeDot);
+document.write("Number as string without dot", removeDot +"<br>");
 
 // Remove the dot to display “3536” display in your browser.
-
 
 // 13. Write a program to take user input and store username
 // in a variable. If the username contains any special symbol
 // among [@ . , !], prompt the user to enter a valid username.
 // For character codes of [@ .
 
-//     14. You have an array
+//  var UserData =prompt("enter your first name");
+// var dataStore=prompt("enter your last name");
+// var data= UserData + " " + dataStore;
+//  alert("Hello, " + fullName + " Welcome");
+
+
+//14. You have an array
 // A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
 // Write a program to enable “search by user input” in an
 // array. After searching, prompt the user whether the given
@@ -120,6 +125,8 @@ document.write("Number as string without dot", removeDot);
 // enters cookie, Cookie, COOKIE or coOkIE, program
 // should inform about its availability. Example:
 
+// var a=["cake", "apple pie", "cookie", "chips", "patties"]
+// var userSearch=prompt("search")
 
 
 // 15. Write a program to take password as an input from
@@ -132,16 +139,43 @@ document.write("Number as string without dot", removeDot);
 // For character codes of a-z, A-Z & 0-9, refer to ASCII
 // table at the end of this document.
 
+
+
+
 // 16. Write a program to convert the following string to an
 // array using string split method.
 // var university = “University of Karachi”;
 // Display the elements of array in your browser.
 
+var university="university of karachi"
+var universityArray=university.split("")
+
+for (var i = 0; i < universityArray.length; i++) {
+    document.write(universityArray[i] + "</br>");
+}
 
 // 17. Write a program to display the last character of a user
 // input.
+// Prompt user for input
+var userChar = prompt("Enter Some Text for find the last character");
 
+// Check if userInput is not null and not empty
+if (userChar && userChar.length > 0) {
+    // Get the last character of the userInput
+    var lastCharacter = userChar.charAt(userChar.length - 1);
+    
+    // Display the last character
+    alert("Last character of the input " + lastCharacter);
+} else {
+    // Handle case where userInput is empty or null
+    alert("No input provided.");
+}
+ 
 
 // 18. You have a string “The quick brown fox jumps over the
 // lazy dog”. Write a program to count number of
 // occurrences of word “the” in given string.
+
+ var brownDog="The quick brown fox jumps over the lazy dog";
+ var wordSearch=brownDog.charAt("the")
+document.write(wordSearch+"<br>");
