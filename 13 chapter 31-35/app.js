@@ -1,26 +1,53 @@
 // 1. Write a program that displays current date and time in
 // your browser.
-
- var rightNow = new Date();
- var theDay = rightNow.getDay();
- document.write(theDay)
-
-
-
-
-
-
+//  var today=newDate()   
+//  var day = today.getDay()
+//  var days=["sunday","Monday","Tuesday","Wednesday","Thursday"]
+//  document.write(days[day])
 
 // 2. Write a program that alerts the current month in words.
 // For example December.
+// var month=currentMonth()   
+//  var current = today.getMonth()
+//  var months=["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"]
+//  alert(months)
+
 // 3. Write a program that alerts the first 3 letters of the current
 // day, for example if today is Sunday then alert will show
 // Sun.
+
+// var newDay=newDay()   
+// var currentDay = today.getDay()
+// var shortdays=["sun","Mon","Tues","Wednes","Thurs"]
+// alert(Shortdays)
+
 // 4. Write a program that displays a message “It’s Fun day” if
 // its Saturday or Sunday today.
+
+// Get the current date
+// var today = dated();
+
+// // Get the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+// var dayOfWeek = today.getDay();
+
+// // Check if it's Saturday (6) or Sunday (0)
+// if (dayOfWeek === 6 || dayOfWeek === 0) {
+//     console.log("It's Fun day");
+// } else {
+//     console.log("It's not Fun day");
+// }
 // 5. Write a program that shows the message “First fifteen
 // days of the month” if the date is less than 16th of the month
 // else shows “Last days of the month”.
+var first=day()
+var firstMonth=today.getmonth()
+if (dayOfMonth === 12 || dayOfMonth === 0) {
+    console.log("First fifteen days of the month");
+} else {
+  console.log("Last days of the month");
+}
+
+
 // 6. Write a program that determines the minutes since
 // midnight, Jan. 1, 1970 and assigns it to a variable that
 // hasn't been declared beforehand. Use any variable you like
@@ -48,11 +75,6 @@
 // decimal places. Display the following fields:
 // a. Customer Name
 // b. Current Month
-
-// DATE METHODS | JAVASCRIPT
-
-// Page 5 of 5
-
 // c. Number of units
 // d. Charges per unit
 // e. Net Amount Payable (within Due Date)
@@ -63,11 +85,6 @@
 // Net Amount Payable (within Due Date) = Number of units * Charges per unit
 // & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
 
-
-
-
-
-
 // // 1. Write a program that takes a positive integer from user &
 // // display the following in your browser.
 // // a. number
@@ -76,19 +93,19 @@
 // // d. ceil value of the number
 
 // // Prompt user for a positive integer
-// var userInput = prompt("Enter a positive integer:");
+ var userInput = prompt("Enter a positive integer:");
 
 // // Convert user input to a number
-// var number = parseInt(userInput);
+var number = parseInt(userInput);
 
 // // Check if the input is a valid positive integer
-// if (isNaN(number) || number <= 0) {
-//     document.write("<p>Invalid input. Please enter a positive integer.</p>");
-// } else {
-//     // Calculate round, floor, and ceil values
-//     var roundValue = Math.round(number);
-//     var floorValue = Math.floor(number);
-//     var ceilValue = Math.ceil(number);
+ if (isNaN(number) || number <= 0) {
+  document.write("<p>Invalid input. Please enter a positive integer.</p>");
+ } else {
+//  Calculate round, floor, and ceil values
+   var roundValue = Math.round(number);
+   var floorValue = Math.floor(number);
+   var ceilValue = Math.ceil(number);
 
 //     // Display the results in the browser
 //     document.write("a. Number: " + number +"</br>");
@@ -96,8 +113,6 @@
 //     document.write("c. Floor value: " + floorValue + "</br>");
 //     document.write("d. Ceil value: " + ceilValue + "</br>");
 // }
-
-
 
 
 // // 2. Write a program that takes a negative floating point
@@ -108,29 +123,26 @@
 // // d. ceil value of the number
 
 
-// var negativeFloat = prompt("Enter a negative floating point:");
+var negativeFloat = prompt("Enter a negative floating point:");
 
 // // Convert user input to a number
-// var numberOne = parseFloat(negativeFloat);
+var numberOne = parseFloat(negativeFloat);
 
 // // Check if the input is a valid positive integer
-// if (isNaN(numberOne) || numberOne>= 0) {
-//     document.write("<p>Invalid input. Please enter a negative floating point.</p>");
-// } else {
+if (isNaN(numberOne) || numberOne>= 0) {
+ document.write("<p>Invalid input. Please enter a negative floating point.</p>");
+} else {
 //     // Calculate round, floor, and ceil values
-//     var roundValue = Math.round(numberOne);
-//     var floorValue = Math.floor(numberOne);
-//     var ceilValue = Math.ceil(numberOne);
+   var roundValue = Math.round(numberOne);
+    var floorValue = Math.floor(numberOne);
+   var ceilValue = Math.ceil(numberOne);
 
 //     // Display the results in the browser
-//     document.write("a. Number: " + numberOne +"</br>");
-//     document.write("b. Round off value: " + roundValue + "</br>");
-//     document.write("c. Floor value: " + floorValue + "</br>");
-//     document.write("d. Ceil value: " + ceilValue + "</br>");
-// }
-
-
-
+  document.write("a. Number: " + numberOne +"</br>");
+  document.write("b. Round off value: " + roundValue + "</br>");
+  document.write("c. Floor value: " + floorValue + "</br>");
+  document.write("d. Ceil value: " + ceilValue + "</br>");
+}
 
 // // 3. Write a program that displays the absolute value of a
 // // number.
